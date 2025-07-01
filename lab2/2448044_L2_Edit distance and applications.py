@@ -81,7 +81,6 @@ def main():
             print("Invalid choice. Please enter 1, 2, or 3.")
 
 if __name__ == "__main__":
-    # Ensure NLTK resources are available
     try:
         nltk.data.find('tokenizers/punkt')
     except LookupError:
