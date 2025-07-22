@@ -58,7 +58,7 @@ with tab2:
     if st.button("Perform Alignment"):
         if seq1 and seq2:
             # Perform alignment
-            alignments = pairwise2.align.globalms(seq1, seq2, match_score, mismatch_score, gap_open, gap_extend)
+            alignments = pairwise2.align.globalms(seq1, seq2, match_score, mismatch_score, gap_open, gap_extend) # type: ignore
             
             if alignments:
                 # Get the first (best) alignment

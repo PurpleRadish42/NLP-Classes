@@ -8,7 +8,7 @@ def compute_edit_distance(s1, s2):
 
 def perform_alignment(seq1, seq2, match=1, mismatch=-1, gap_open=-2, gap_extend=-2):
     """Use Biopython to perform Needleman-Wunsch global alignment."""
-    alignments = pairwise2.align.globalms(seq1, seq2, match, mismatch, gap_open, gap_extend)
+    alignments = pairwise2.align.globalms(seq1, seq2, match, mismatch, gap_open, gap_extend) # type: ignore
     aligned_seq1, aligned_seq2, score, _, _ = alignments[0]
 
     # Generate a match line
