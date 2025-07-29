@@ -6,6 +6,13 @@ from collections import defaultdict
 import math
 import spacy
 
+# Configure page
+st.set_page_config(
+    page_title="NLP Lab 3: N-gram, POS, NER",
+    # layout="wide",
+    # initial_sidebar_state="expanded"
+)
+
 # Download required NLTK data
 @st.cache_resource
 def download_nltk_data():
