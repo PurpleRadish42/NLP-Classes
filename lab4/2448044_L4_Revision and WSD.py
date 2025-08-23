@@ -17,7 +17,7 @@ nltk.download('omw-1.4')
 nltk.download('averaged_perceptron_tagger')
 
 # App config
-st.set_page_config(page_title="NLP Tasks Explorer", layout="wide", page_icon="🧠")
+st.set_page_config(page_title="Lab 4", layout="wide", page_icon="🧠")
 
 # Dark mode & light mode CSS
 st.markdown("""
@@ -67,7 +67,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-st.title("🧠 NLP Tasks Explorer")
+st.title("Lab 4")
 st.markdown("Explore various Natural Language Processing tasks interactively. Each tab presents a different NLP challenge with visualizations and explanations.")
 
 # Tabs for each question
